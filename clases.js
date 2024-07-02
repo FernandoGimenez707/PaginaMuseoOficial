@@ -1,12 +1,45 @@
-class Mercaderia{
-    constructor(nom, cant, imp){
-        this.nombre = nom;
-        this.cantidad = cant;
-        this.impuestos = imp;
+class Museo{
+    constructor(nombre, direccion, telefono){
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
     }
 }
 
-class Usuario{
+class Evento{
+    constructor(nombre, descripcion, fechaPublicacion, ubicacion, img, horario){
+        this. nombre = nombre;
+        this.descripcion = descripcion;
+        this.fechaPublicacion = fechaPublicacion;
+        this.ubicacion = ubicacion;
+        this.img = img;
+        this.horario = horario;
+    }
+}
+
+class Noticia{
+    constructor(nombre, fechaPublicacion, descripcion, img){
+        this.nombre = nombre;
+        this.fechaPublicacion = fechaPublicacion;
+        this.descripcion = descripcion;
+        this.img = img;
+    }
+}
+
+class FormDonacion{
+    constructor(donador, telefono, ubicacion, descripcion, img){
+        this.donador = donador;
+        this.telefono = telefono;
+        this.ubicacion = ubicacion;
+        this.descripcion = descripcion ;
+        this.img = img;
+    }
+}
+
+class Pagina{
+    
+}
+/*class Usuario{
     constructor(nombre, usuario, pass, token, perfil){
         this.nombre = nombre;
         this.usuario = usuario;
@@ -47,6 +80,6 @@ class Perfil {
             this.cuso = tmpCuso;
         }
     }
-}
+}*/
 
 module.exports = {Mercaderia, Usuario, Perfil}
